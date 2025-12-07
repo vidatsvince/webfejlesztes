@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="images/favicon.png">
+  <title>Termékek — LooksMaxx</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap"><h1 class="logo">LooksMaxx</h1>
+  <nav><a href="index.html">Főoldal</a><a href="products.html">Termékek</a><a href="kalkulator.html">Kalkulátor</a><a href="contact.html">Kapcsolat</a></nav></div></header>
+  <main class="wrap">
+    <h2>Termékek</h2>
+    <div class="grid">
+      <div class="product" data-id="ashwa">
+        <h3>Ashwagandha — 60 kapszula</h3>
+        <p class="short">Stressz és regeneráció támogatására.</p>
+        <button class="info-btn">Információ & Ár</button>
+      </div>
+      <div class="product" data-id="jawgum">
+        <h3>Jawline Chiseler (gum)</h3>
+        <p class="short">Arcszobrász gyakorlatokhoz.</p>
+        <button class="info-btn">Információ & Ár</button>
+      </div>
+      <div class="product" data-id="guasha">
+        <h3>Gua Sha kő</h3>
+        <p class="short">Arcmasszázshoz, nyirokkeringés serkentésére.</p>
+        <button class="info-btn">Információ & Ár</button>
+      </div>
+    </div>
+
+    <div id="productModal" class="modal hidden">
+      <div class="modal-content">
+        <button id="closeModal" class="close">×</button>
+        <h3 id="pTitle"></h3>
+        <p id="pDesc"></p>
+        <p><strong>Ár:</strong> <span id="pPrice"></span></p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="wrap"><p>© 2025 LooksMaxx</p></div></footer>
+  <script src="js/products.js"></script>
+</body>
+</html>

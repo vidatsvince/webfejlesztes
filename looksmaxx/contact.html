@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="images/favicon.png">
+  <title>Kapcsolat — LooksMaxx</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap"><h1 class="logo">LooksMaxx</h1>
+  <nav><a href="index.html">Főoldal</a><a href="products.html">Termékek</a><a href="kalkulator.html">Kalkulátor</a><a href="contact.html">Kapcsolat</a></nav></div></header>
+
+  <main class="wrap">
+    <h2>Kapcsolat</h2>
+    <form id="contactForm" class="card">
+      <label>Név: <input id="c_name" type="text" required></label>
+      <label>Email: <input id="c_email" type="email" required></label>
+      <label>Telefonszám: <input id="c_tel" type="tel" pattern="\+?\d{6,15}"></label>
+      <label>Életkor: <input id="c_age" type="number" min="13" max="120"></label>
+      <label>Születésnap: <input id="c_bday" type="date"></label>
+      <label>Érdeklődési kör: 
+        <select id="c_interest">
+          <option value="">Válassz</option>
+          <option value="skin">Bőrápolás</option>
+          <option value="jaw">Jawline</option>
+          <option value="supp">Kiegészítők</option>
+        </select>
+      </label>
+      <label>Üzenet: <textarea id="c_msg"></textarea></label>
+      <fieldset>
+          <div class="radio-row">
+            <label><input type="radio" name="newsletter" value="email" checked> Email</label>
+            <label><input type="radio" name="newsletter" value="sms"> SMS</label>
+          </div>
+      </fieldset>
+
+      <label class="checkbox-row">
+        <input type="checkbox" id="c_terms">
+        Elfogadom az adatkezelési tájékoztatót
+      </label>
+
+      <button type="submit" class="btn">Küldés</button>
+      <div id="c_errors" class="errors"></div>
+    </form>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© 2025 LooksMaxx</p></div></footer>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>

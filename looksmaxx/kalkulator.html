@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="images/favicon.png">
+  <title>Fekvenyomás Rang Kalkulátor — LooksMaxx</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header"><div class="wrap"><h1 class="logo">LooksMaxx</h1>
+  <nav><a href="index.html">Főoldal</a><a href="products.html">Termékek</a><a href="kalkulator.html">Kalkulátor</a><a href="contact.html">Kapcsolat</a></nav></div></header>
+
+  <main class="wrap">
+    <h2>Bench press rang kalkulátor</h2>
+    <p>Add meg, hány kg-ot tudsz lenyomni fekve — minél nagyobb, annál magasabb a rank.</p>
+    <form id="calcForm" class="card">
+      <label>Testsúly (kg): <input id="weight" type="number" min="30" max="300" value="75" required></label>
+      <label>Fekvenyomás (kg): <input id="bench" type="number" min="0" max="1000" value="80" required></label>
+      <button type="submit" class="btn">Számol</button>
+    </form>
+    <div id="calcResult" class="card hidden"></div>
+    <section class="ranks card">
+      <h3>Rangskála</h3>
+      <ul>
+        <li>30-50 kg — sub 3</li>
+        <li>50-70 kg — sub 5</li>
+        <li>70-90 kg — ltn</li>
+        <li>90-120 kg — mtn</li>
+        <li>120-150 kg — htn</li>
+        <li>150-175 kg — chadlite</li>
+        <li>175-200 kg — chad</li>
+        <li>200-1000 kg — true adam</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="wrap"><p>© 2025 LooksMaxx</p></div></footer>
+  <script src="js/kalkulator.js"></script>
+</body>
+</html>
